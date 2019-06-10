@@ -1,0 +1,75 @@
+<div id="app">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <a class="navbar-brand" [routerLink]="['/accueil']" href="#"><i class="fa fa-home"></i>Accueil</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarNavDropdown" class="navbar-collapse collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/voir-son-profil']" href="#">
+            <i class="fa fa-address-book-o"></i>Voir son profil
+          </a>
+        </li>&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/accueil']" href="#">
+            <i class="fa fa-th-list"></i>Historique</a>
+        </li>&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/envoyer-de-l\'argent']" href="#"><i class="fa fa-money"></i>Envoyer de l'argent</a>
+        </li>&nbsp;&nbsp;&nbsp;
+
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/connexion']" href="#"><i class="fa fa-user"></i>Connexion</a>
+        </li>&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/inscription']" href="#">
+            <i class="fa fa-user-plus"></i>Inscription
+          </a>
+        </li>&nbsp;&nbsp;
+        <div class="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-cogs"></i> Paramètres
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" [routerLink]="['/modifier-son-profil']" href="#">
+              <i class="fa fa-user-times"></i> Modifier son profil
+            </a>
+            <a class="dropdown-item" [routerLink]="['/contacter-l-administrateur']" href="#">
+              <i class="fa fa-envelope-o"></i> Envoyer un message
+            </a>
+            <a class="dropdown-item" [routerLink]="['/supprimer-son-compte']" href="#">
+              <i class="fa fa-trash-o"></i> Supprimer son compte
+            </a>
+            <a class="dropdown-item" [routerLink]="['/admin']" href="#">
+              <i class="fa fa-unlock"></i> Gestion administration
+            </a>
+          </div>
+        </div>&nbsp;
+        <div class="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-comments"></i> Notification
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" [routerLink]="['/modifier-son-profil']" href="#">
+              <i class="fa fa-user-times"></i> Modifier son profil
+            </a>
+            <a class="dropdown-item" [routerLink]="['/contacter-l-administrateur']" href="#">
+              <i class="fa fa-envelope-o"></i> Envoyer un message
+            </a>
+            <a class="dropdown-item" [routerLink]="['/supprimer-son-compte']" href="#">
+              <i class="fa fa-trash-o"></i> Supprimer son compte
+            </a>
+          </div>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['login']" href="#">
+            <i class="fa fa-sign-out"></i>Déconnexion
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,73 @@
+<h2>Liste des clients</h2><br><br>
+
+<table class="table">
+  <thead class="table-info">
+  <tr>
+    <th>Nom</th>
+    <th>Prénom</th>
+    <th>Status</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>Client</td>
+    <td>
+      <a href="#" [routerLink]="['/admin/user-content']"><i class="fa fa-search"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-pencil-square-o"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-trash-o"></i></a>
+    </td>
+  </tr>
+  <!--
+    <div>
+    <span class="help is-info"  *ngIf="isLoading">Loading...</span>
+    <table class="table" *ngIf="!isLoading">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Bad Puns Count</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let movie of movies">
+                <td>{{ movie.id }}</td>
+                <td>{{ movie.title }}</td>
+                <td>{{ movie.count }}</td>
+                <td>
+                    <form>
+                        <button class="button is-primary">Increase Count</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+  -->
+  <tr>
+    <td>Mary</td>
+    <td>Moe</td>
+    <td>Client</td>
+    <td>
+      <a href="#" [routerLink]="['/admin/user-content']"><i class="fa fa-search"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-pencil-square-o"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-trash-o"></i></a>
+    </td>
+  </tr>
+  <tr>
+    <td>July</td>
+    <td>Dooley</td>
+    <td>Client</td>
+    <td>
+      <a href="#" [routerLink]="['/admin/user-content']"><i class="fa fa-search"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-pencil-square-o"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-trash-o"></i></a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<a class="btn btn-secondary" href="#" [routerLink]="['/admin']">Retour à la gestion des membres</a>

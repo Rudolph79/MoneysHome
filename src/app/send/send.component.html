@@ -1,0 +1,40 @@
+<div class="form-group">
+  <form>
+  <div class="row">
+    <div class="col">
+      <label for="numero">Nom sur la carte:</label>
+      <input type="text" class="form-control col-sm-8" id="numero" placeholder="1234 5678 9012 3456" name="numero"><br>
+      <label for="lastname">Numéro de la carte:</label>
+      <input type="text" class="form-control col-sm-8" id="lastname" placeholder="Jean DUPONT" name="lastname"><br>
+      <label for="pictogram">Pictogramme:</label>
+      <input type="text" class="form-control col-sm-8" id="pictogram" placeholder="123" name="pictogram"><br>
+      <label for="validity_date">Date de validité:</label>
+      <input class="form-control col-sm-8" type="date" id="validity_date" name="validity_date"><br>
+      <label for="sum_sent">Somme à envoyer:</label>
+      <input type="text" class="form-control col-sm-8" id="sum_sent" placeholder="ex: 1000 €" name="sum_sent"><br>
+    </div>
+    <div class="col">
+      <fieldset class="scheduler-border">
+        <legend class="scheduler-border">Destinataire</legend>
+          <div class="form-group">
+            <label for="lastname_recipient">Nom:</label>
+            <input type="text" class="form-control col-sm-8" id="lastname_recipient" placeholder="Nom du destinataire" name="lastname_recipient">
+          </div>
+          <div class="form-group">
+            <label for="name_recipient">Prénom:</label>
+            <input type="text" class="form-control col-sm-8" id="name_recipient" placeholder="Prénom du destinataire" name="name_recipient">
+          </div>
+          <div class="form-group">
+            <label for="phone_recipient">Numéro de téléphone:</label>
+            <input type="text" class="form-control col-sm-8" id="phone_recipient" placeholder="+ 33 7 12345678" name="phone_recipient">
+          </div>
+          <div class="form-group">
+            <label for="country_recipient">Pays:</label>
+            <input type="text" class="form-control col-sm-8" id="country_recipient" placeholder="Pays du destinataire" name="country_recipient">
+          </div>
+      </fieldset>
+    </div>
+  </div><br>
+    <input type="submit" class="btn btn-success float-right col-lg-3" value="Envoyer">
+  </form><br><br>
+</div>

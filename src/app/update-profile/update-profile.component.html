@@ -1,0 +1,56 @@
+<h3>{{ title }}</h3>
+
+<form  (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <div class="row">
+      <div class="col">
+        <label for="lastname">Nom:</label>
+        <input type="text" class="form-control col-sm-8" id="lastname" placeholder="Entrez votre nom" name="lastname">
+      </div>
+      <div class="col">
+        <label for="name">Prénom:</label>
+        <input type="name" class="form-control col-sm-8" id="name" placeholder="Entrez votre prénom" name="name">
+      </div>
+    </div><br>
+
+    <div class="row">
+      <div class="col">
+        <label for="email">Adresse email:</label>
+        <input type="text" class="form-control col-sm-8" id="email" placeholder="Entrez votre adresse email" name="email">
+      </div>
+      <div class="col">
+        <label for="phone">Numéro de téléphone:</label>
+        <input type="text" class="form-control col-sm-8" id="phone" placeholder="ex: +33 6 59497938" name="phone">
+      </div>
+    </div><br>
+
+    <div class="row">
+      <div class="col">
+        <label for="address">Adresse:</label>
+        <input type="text" class="form-control col-sm-8" id="address" placeholder="Entrez votre adresse" name="address">
+      </div>
+      <div class="col">
+        <label for="city">Ville</label>
+        <input type="text" class="form-control col-sm-8" id="city" placeholder="Entrez votre ville" name="city">
+      </div>
+    </div><br>
+
+    <div class="row">
+      <div class="col">
+        <label for="postalCode">Code postal:</label>
+        <input type="text" class="form-control col-sm-8" id="postalCode" placeholder="Entrez votre code postal" name="postalCode">
+      </div>
+      <div class="col">
+        <label for="country">Pays:</label>
+        <input type="text" class="form-control col-sm-8" id="country" placeholder="Entrez votre pays" name="country">
+      </div>
+    </div>
+  </div><br>
+  <!--<div class="form-group row">
+    <label for="example-date-input" class="col-2 col-form-label">Date</label>
+    <div class="col-10">
+      <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+    </div>
+  </div>-->
+  <input type="submit" class="btn btn-primary" value="Valider" [disabled]="!loginForm.form.valid">
+</form>
